@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000000"
+        >
+    <!-- Header Toolbar-->
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD700">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Button
+                    android:background="#FFD700"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_menu2"/>
+
+            <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"/>
+
+
+            <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                android:src="@drawable/header_filmgratis"/>
+
+            <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"/>
+
+            <Button
+                    android:background="#FFD700"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_search"/>
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <!-- Header Toolbar-->
+
+    <!-- Main Home Content-->
+    <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+    </FrameLayout>
+    <!-- Main Home Content-->
+
+    <!-- Footer Bottom Navigation-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+            android:id="@+id/navigation"
+            android:background="@drawable/footerbottomnav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            app:menu="@menu/navigation"
+            app:itemIconTint="#ffffff"
+            app:itemTextColor="#ffffff"
+    />
+    <!-- Footer Bottom Navigation-->
+
+</LinearLayout>
